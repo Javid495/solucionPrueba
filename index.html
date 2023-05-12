@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bostrapp/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/boostrap/bootstrap.js" defer></script>
+    <script src="js/newMain.js" async></script>
+    <script src="app.js" type="module" defer></script>
+    <title>Document</title>
+</head>
+<body>
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="#" class="brand"><i class='bx bxs-smile icon'></i> AdminSite</a>
+		<ul class="side-menu">
+			<li><a href="#" class="active"><i class='bx bxs-dashboard icon' ></i> Dashboard</a></li>
+			<li class="divider" data-text="Campers">Campers</li>
+			<li>
+				<a href="#"><i class='bx bxs-inbox icon' ></i> Busqueda <i class='bx bx-chevron-right icon-right' ></i></a>
+				<ul class="side-dropdown">
+					<li><a href="#" data-opcion ="bme" class = "opMenu">Buscar Menores De Edad</a></li>
+					<li><a href="#" data-opcion ="bcxt" class = "opMenu">Buscar Campers Por Team</a></li>
+					<li><a href="#" data-opcion ="bcxa" class = "opMenu">Buscar Campers Por Antiguedad</a></li>
+                    <li><a href="#" data-opcion ="mxc" class = "opMenu">Modulos Por Camper</a></li>
+				</ul>
+			</li>
+			<li><a href="#" data-opcion ="rc" class = "opMenu"><i class='bx bxs-chart icon' ></i> Registrar Camper</a></li>
+			<li><a href="#" data-opcion ="lc" class = "opMenu"><i class='bx bxs-widget icon' ></i> Listado Campers</a></li>
+			<li class="divider" data-text="Parametros">Parametros</li>
+			<li>
+                <a href="#"><i class='bx bxs-notepad icon' ></i> Skills <i class='bx bx-chevron-right icon-right' ></i></a>
+				<ul class="side-dropdown">
+                    <li><a href="#" data-opcion ="lcskill" class = "opMenu">Listar</a></li>
+					<li><a href="#" data-opcion ="cSkill" class = "opMenu">Crear</a></li>
+				</ul>
+			</li>
+            <li>
+                <a href="#"><i class='bx bxs-notepad icon' ></i> Teams <i class='bx bx-chevron-right icon-right' ></i></a>
+				<ul class="side-dropdown">
+                    <li><a href="#" data-opcion ="tlTeam" class = "opMenu">Listar</a></li>
+					<li><a href="#" data-opcion ="cteam" class = "opMenu">Crear</a></li>
+				</ul>
+			</li>
+            <li>
+                <a href="#"><i class='bx bxs-notepad icon' ></i> Modulos <i class='bx bx-chevron-right icon-right' ></i></a>
+				<ul class="side-dropdown">
+                    <li><a href="#" data-opcion ="mLmodulo" class = "opMenu">Listar</a></li>
+					<li><a href="#" data-opcion ="mcmodulo" class = "opMenu">Crear</a></li>
+                    <li><a href="#" data-opcion ="mskmodulo" class = "opMenu">Modulos Por Skill</a></li>
+				</ul>
+			</li>
+            <li>
+                <a href="#"><i class='bx bxs-notepad icon' ></i> Evaluacion <i class='bx bx-chevron-right icon-right' ></i></a>
+				<ul class="side-dropdown">
+                    <li><a href="#" data-opcion ="crevaluacion" class = "opMenu">Calificar Recluta</a></li>
+					<li><a href="#" data-opcion ="lexrevaluacion" class = "opMenu">Listar Evaluaciones Por Recluta</a></li>
+                    <li><a href="#" data-opcion ="lrevaluacion" class = "opMenu">Listar Reclutas</a></li>
+				</ul>
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+	<!-- NAVBAR -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu toggle-sidebar' ></i>
+			<form action="#">
+				
+			</form>
+			
+			<span class="divider"></span>
+			<div class="profile">
+				<img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGVvcGxlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+				<ul class="profile-link">
+					<li><a href="#"><i class='bx bxs-user-circle icon' ></i> Profile</a></li>
+					<li><a href="#"><i class='bx bxs-cog' ></i> Settings</a></li>
+					<li><a href="#"><i class='bx bxs-log-out-circle' ></i> Logout</a></li>
+				</ul>
+			</div>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main>
+			<h1 class="title">Dashboard</h1>
+			<ul class="breadcrumbs">
+				<li><a href="#">Home</a></li>
+				<li class="divider">/</li>
+				<li><a href="#" class="active">Dashboard</a></li>
+			</ul>
+		</main>
+        <div class="container" id="busqueda" style="display: none;"></div>
+        <div class="container" id="campers" style="display: none;"></div>
+        <div class="container" id="skills" style="display: none;"></div>
+        <div class="container" id="evaluacion" style="display: none;"></div>
+        <div class="container" id="modulos" style="display: none;"></div>
+        <div class="container" id="teams" style="display: none;"></div>
+
+		<!-- MAIN -->
+	</section>
+	<!-- NAVBAR -->
+</body>
+</html>
